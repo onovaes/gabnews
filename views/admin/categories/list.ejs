@@ -1,8 +1,64 @@
 <%- include('../../partials/header.ejs')  %>
 
 <div class="container">
+      
+    <!--<div id="modal-dialog" class="modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+                <a href="#" data-dismiss="modal" aria-hidden="true" class="close">×</a>
+                 <h3>Are you sure</h3>
+            </div>
+            <div class="modal-body">
+                 <p>Do you want to submit the form?</p>
+            </div>
+            <div class="modal-footer">
+              <a href="#" id="btnYes" class="btn confirm">Yes</a>
+              <a href="#" data-dismiss="modal" aria-hidden="true" class="btn secondary">No</a>
+            </div>
+          </div>
+        </div>
+    </div>-->
+    
+    <div class="modal fade" id="confirm-delete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Confirm Delete</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    
+                </div>
+            
+                <div class="modal-body">
+                    <p>You are about to delete one track, this procedure is irreversible.</p>
+                    <p>Do you want to proceed?</p>
+                </div>
+                
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-danger btn-ok confirm" id="btnYes">Delete</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $('#confirm-delete').on('show', function() {
+            alert('ww');
+            var link = $(this).data('link');
+           
+            confirmBtn = $(this).find('.confirm');
+        })
+
+        $('#btnYes').click(function() {
+            alert('ss');
+            $('form').submit();    
+        });
+    </script>
 
     <div class="card mt-4">
+
         <div class="card-header">
             <h2>Categories
                 <a class="btn btn-outline-primary float-right" href="/admin/categories/new" role="button">Create</a>
@@ -28,13 +84,17 @@
                             <th><%= category.slug %></th>
                             <th>
                                 <button class="btn btn-warning">Edit</button>
+                                
                                 <form action="/admin/categories/delete" method="POST" style="display: inline;">
                                     <input type="hidden" name="id" value="<%=category.id %>">
                                     <button class="btn btn-danger">Del</button>
+
+                                    <!--<a href="#confirm-delete" class="btn btn-danger" data-toggle="modal"> Delete</a>-->
                                 </form>
                             </th>
                         </tr>
                     <% }) %>
+
                 </tbody>
             </table>
         </div>
