@@ -20,7 +20,7 @@ Before starting, you will need to have the following tools installed on your com
 
 ```bash
 # Clone this repo
-$ git clone <https://github.com/onovaes/gabnews>
+$ git clone https://github.com/onovaes/gabnews
 
 # Entry in the folder
 $ cd gabnews
