@@ -26,7 +26,13 @@
                             <th><%= category.id %></th>
                             <th><%= category.title %></th>
                             <th><%= category.slug %></th>
-                            <th>DEL</th>
+                            <th>
+                                <button class="btn btn-warning">Edit</button>
+                                <form action="/admin/categories/delete" method="POST" style="display: inline;">
+                                    <input type="hidden" name="id" value="<%=category.id %>">
+                                    <button class="btn btn-danger">Del</button>
+                                </form>
+                            </th>
                         </tr>
                     <% }) %>
                 </tbody>
