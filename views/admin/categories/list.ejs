@@ -1,0 +1,41 @@
+<%- include('../../partials/header.ejs')  %>
+
+<div class="container">
+
+    <div class="card mt-4">
+        <div class="card-header">
+            <h2>Categories
+                <a class="btn btn-outline-primary float-right" href="/admin/categories/new" role="button">Create</a>
+            </h2>
+        </div>
+        <div class="card-body">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Title</th>
+                        <th>Slug</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+        
+                <tbody>
+
+                    <% categories.forEach(category => { %>
+                        <tr>
+                            <th><%= category.id %></th>
+                            <th><%= category.title %></th>
+                            <th><%= category.slug %></th>
+                            <th>DEL</th>
+                        </tr>
+                    <% }) %>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+
+</div>
+
+<%- include('../../partials/footer.ejs')  %>
