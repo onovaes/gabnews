@@ -14,9 +14,18 @@ Simple News Publishing System made with node.js v14 and express framework.
 ### Requirements
 
 Before starting, you will need to have the following tools installed on your computer:
-[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/). 
+[Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/). 
 
-### 🎲 Rodando o Back End (servidor)
+
+### TO-DOs
+
+- [ ] Categories CRUD
+- [ ] Dialog Confirm
+- [ ] Pagination
+- [ ] Article CRUD
+
+
+### 🎲 Running for development
 
 ```bash
 # Clone this repo
@@ -28,9 +37,6 @@ $ cd gabnews
 # Install the dependencies
 $ npm install
 
-# Execute a aplicação em modo de desenvolvimento
-#$ npm run dev:server
+# Run the app
 $ node index.js
-
-# O servidor inciará na porta:8090 - acesse <http://localhost:8090>
 ```
