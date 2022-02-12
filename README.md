@@ -19,9 +19,10 @@ Before starting, you will need to have the following tools installed on your com
 
 ### TO-DOs
 
-[ ] Dialog Confirm Delete for Categories CRUD
-[ ] Pagination for Categories CRUD
-[ ] Article CRUD
+- [ ] Dialog Confirm Delete for Categories CRUD
+- [ ] Pagination for Categories CRUD
+- [ ] Edit Categorie logic and views
+- [ ] Article CRUD
 
 
 ### 🎲 Running for development
