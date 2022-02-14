@@ -22,6 +22,7 @@ Before starting, you will need to have the following tools installed on your com
 - [ ] Pagination for Categories CRUD
 - [ ] Edit Categorie logic and views
 - [ ] Unit Test
+- [ ] Readme start server with NPM instructions
 - [ ] Article CRUD
 - [ ] Favicon
 
