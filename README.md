@@ -1,6 +1,6 @@
 # GabNews
 
-Simple News Publishing System made with node.js v14 and express framework.
+Simple News Publishing System made with node.js and express framework.
 
 #### 🚧  Under development...  🚧
 
@@ -19,10 +19,11 @@ Before starting, you will need to have the following tools installed on your com
 
 ### TO-DOs
 
-- [ ] Dialog Confirm Delete for Categories CRUD
 - [ ] Pagination for Categories CRUD
 - [ ] Edit Categorie logic and views
+- [ ] Unit Test
 - [ ] Article CRUD
+- [ ] Favicon
 
 
 ### 🎲 Running for development
