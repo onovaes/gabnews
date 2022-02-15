@@ -39,5 +39,4 @@ app.get("/", function(req,res){
 })
 
 
-
-app.listen(8090, function() { console.log("Servidor rodando na http://localhost:8090") })  
+app.listen(8090, function() { console.log('\x1b[36m%s\x1b[0m', '\nRunning at http://localhost:8090\n');   })  

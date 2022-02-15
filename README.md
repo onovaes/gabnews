@@ -19,11 +19,11 @@ Before starting, you will need to have the following tools installed on your com
 
 ### TO-DOs
 
-- [ ] Transform pagination to be used in others modules
+- [ ] Transform pagination to be used in others controllers
 - [ ] Improve patterns for directories
+- [ ] Use a config file to store variables. Add instrucion to Readme.md
 - [ ] Edit Categorie logic and views
 - [ ] Unit Test
-- [ ] Readme start server with NPM instructions
 - [ ] Article CRUD
 - [ ] Favicon
 
