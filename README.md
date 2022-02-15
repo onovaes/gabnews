@@ -27,7 +27,7 @@ Before starting, you will need to have the following tools installed on your com
 - [ ] Favicon
 
 
-### 🎲 Running for development
+### 🎲 Running 
 
 ```bash
 # Clone this repo
@@ -40,5 +40,5 @@ $ cd gabnews
 $ npm install
 
 # Run the app
-$ node index.js
+$ npm start
 ```
