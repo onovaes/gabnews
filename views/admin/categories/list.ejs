@@ -8,7 +8,7 @@
     <div class="card mt-4">
 
         <div class="card-header">
-            <h2>Categories
+            <h2>Categories (<%=categories.count%>)
                 <a class="btn btn-outline-primary float-right" href="/admin/categories/new" role="button">Create</a>
             </h2>
         </div>
@@ -27,7 +27,7 @@
 
         <tbody>
 
-            <% categories.forEach(category => { %>
+            <% categories.rows.forEach(category => { %>
                 <tr>
                     <th><%= category.id %></th>
                     <th><%= category.title %></th>
@@ -37,9 +37,7 @@
                         
                         <form action="/admin/categories/delete" id="formEdit<%=category.id %>" method="POST" style="display: inline;">
                             <input type="hidden" name="id" value="<%=category.id %>">
-                            <button onClick="confirmDeleteModal('<%=category.id %>')" class="btn btn-danger">Del</button>
-
-                            <!--<a href="#confirm-delete" onclick="confirmDeleteModal('<%=category.id %>')"  class="btn btn-danger" data-toggle="modal"> Delete</a>-->  
+                            <button onClick="confirmDeleteModal('<%=category.id %>')" class="btn btn-danger">Del</button> 
                         </form>
                     </th>
                 </tr>
@@ -47,6 +45,24 @@
 
         </tbody>
     </table>
+
+    
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+                
+            <% if (page > 1) { %>
+                <li class="page-item"><a class="page-link" href="/admin/categories/?page=<%=page-1%>">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="/admin/categories/?page=<%=page-1%>"><%=page-1%></a></li>
+            <% } %>
+            <li class="page-item active"><a class="page-link" href="#"><%=page%></a></li>
+            <% if (next) { %>
+                <li class="page-item"><a class="page-link" href="/admin/categories/?page=<%=page+1%>"><%=page+1%></a></li>
+                <li class="page-item"><a class="page-link" href="/admin/categories/?page=<%=page+1%>">Next</a></li>
+            <% } %>
+        </ul>
+      </nav>
+      
+
 
 </div>
 
