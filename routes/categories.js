@@ -4,7 +4,7 @@ const express = require("express");
 const router = express.Router();
 const slugify = require("slugify");
 
-const Category = require("./Category");
+const Category = require("../models/category");
 
 
 
