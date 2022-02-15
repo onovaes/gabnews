@@ -20,6 +20,7 @@ Before starting, you will need to have the following tools installed on your com
 ### TO-DOs
 
 - [ ] Transform pagination to be used in others modules
+- [ ] Improve patterns for directories
 - [ ] Edit Categorie logic and views
 - [ ] Unit Test
 - [ ] Readme start server with NPM instructions
