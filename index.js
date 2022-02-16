@@ -1,5 +1,6 @@
 const express = require("express")
 const app = express()
+const port = process.env.PORT || 3000
 
 const bodyParser = require("body-parser")
 const connection = require("./src/config/db.config")
@@ -40,4 +41,4 @@ app.get("/", function(req,res){
 })
 
 
-app.listen(8090, function() { console.log('\x1b[36m%s\x1b[0m', '\nRunning at http://localhost:8090\n');   })  
+app.listen(port, function() { console.log('\x1b[36m%s\x1b[0m', '\nRunning at http://localhost:'+port+'\n\n');   })  
