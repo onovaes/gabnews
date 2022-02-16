@@ -19,6 +19,7 @@ Before starting, you will need to have the following tools installed on your com
 
 ### TO-DOs
 
+- [ ] Split controller code to services and routes.
 - [ ] Transform pagination to be used in others controllers
 - [ ] Use a config file to store variables. Add instrucion to Readme.md
 - [ ] Edit Categorie logic and views
