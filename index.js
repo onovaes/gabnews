@@ -4,11 +4,11 @@ const app = express()
 const bodyParser = require("body-parser")
 const connection = require("./src/config/db.config")
 
-const categoriesController = require("./src/controllers/categories")
-const articlesController = require("./src/controllers/articles")
+const categoriesController = require("./src/controllers/categories.controllers")
+const articlesController = require("./src/controllers/articles.controllers")
 
-const Article = require("./src/models/article")
-const Category = require("./src/models/category")
+const Article = require("./src/models/article.models")
+const Category = require("./src/models/category.models")
 
 // Set view engine to ejs and sent directory's views
 app.set('view engine', 'ejs')

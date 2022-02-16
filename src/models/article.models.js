@@ -1,5 +1,5 @@
 const Sequelize = require("sequelize")
-const Category = require("./category")
+const Category = require("./category.models")
 const connection = require("../config/db.config")
 
 
