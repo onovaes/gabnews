@@ -14,19 +14,7 @@ Simple News Publishing System made with node.js and express framework.
 ### Requirements
 
 Before starting, you will need to have the following tools installed on your computer:
-[Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/). 
-
-
-### TO-DOs
-
-- [ ] Show message when no rows in categories
-- [ ] Split controller code to services and routes.
-- [ ] Transform pagination to be used in others controllers
-- [ ] Use a config file to store variables. Add instrucion to Readme.md
-- [ ] Edit Categorie logic and views
-- [ ] Unit Test
-- [ ] Article CRUD
-- [ ] Favicon
+[Git](https://git-scm.com),[Node.js](https://nodejs.org/en/) and NPM. 
 
 
 ### 🎲 Running 
@@ -44,3 +32,16 @@ $ npm install
 # Run the app
 $ npm start
 ```
+
+
+### TO-DOs
+
+- [ ] Show message when no rows in categories
+- [ ] Split controller code to services and routes.
+- [ ] Transform pagination to be used in others controllers
+- [ ] Use a config file to store variables. Add instrucion to Readme.md
+- [ ] Edit Categorie logic and views
+- [ ] Unit Test
+- [ ] Article CRUD
+- [ ] Favicon
+
