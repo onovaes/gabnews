@@ -1,5 +1,5 @@
 const Sequelize = require("sequelize")
-const connection = require("../config/database")
+const connection = require("../config/db.config")
 
 const Category = connection.define('categories',{
     title:{

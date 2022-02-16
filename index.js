@@ -2,18 +2,19 @@ const express = require("express")
 const app = express()
 
 const bodyParser = require("body-parser")
-const connection = require("./config/database")
+const connection = require("./src/config/db.config")
 
-const categoriesController = require("./routes/categories")
-const articlesController = require("./routes/articles")
+const categoriesController = require("./src/controllers/categories")
+const articlesController = require("./src/controllers/articles")
 
-const Article = require("./models/article")
-const Category = require("./models/category")
+const Article = require("./src/models/article")
+const Category = require("./src/models/category")
 
-// View Engine
+// Set view engine to ejs and sent directory's views
 app.set('view engine', 'ejs')
+app.set('views','./src/views');
 
-// Static
+// Static Files
 app.use(express.static("public"))
 
 //Body Parser
