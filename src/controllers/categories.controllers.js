@@ -40,7 +40,7 @@ router.get("/admin/categories",(req,res) => {
             url: req.path
 
         }
-       
+       console.log(categories)
         res.render("admin/categories/list", result );
     }).catch(function (error) {
 		res.status(500).send("error 44");

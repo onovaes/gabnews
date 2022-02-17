@@ -36,6 +36,8 @@ $ npm start
 
 ### TO-DOs
 
+- [ ] Seed to categories 
+- [ ] Validate Data
 - [ ] Show message when no rows in categories
 - [ ] Split controller code to services and routes.
 - [ ] Transform pagination to be used in others controllers

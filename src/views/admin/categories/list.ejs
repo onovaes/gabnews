@@ -13,31 +13,37 @@
     </div>
 
 
-    <table class="table mt-4">
+    <table class="table table-bordered mt-4">
         <thead>
             <tr>
-                <th>Id</th>
-                <th>Title</th>
-                <th>Slug</th>
-                <th>Action</th>
+                <th scope="col">#</th>
+                <th scope="col">Title</th>
+                <th scope="col">Slug</th>
+                <th scope="col">Action</th>
             </tr>
         </thead>
         <tbody>
             <% categories.rows.forEach(category => { %>
                 <tr>
-                    <th><%= category.id %></th>
-                    <th><%= category.title %></th>
-                    <th><%= category.slug %></th>
-                    <th>
-                        <button class="btn btn-warning">Edit</button>
+                    <th scope="row"><%= category.id %></th>
+                    <td><%= category.title %></td>
+                    <td><%= category.slug %></td>
+                    <td>
+                        <!--<button class="btn btn-warning">Edit</button>-->
                         
                         <form action="<%=url%>delete" id="formEdit<%=category.id %>" method="POST" style="display: inline;">
                             <input type="hidden" name="id" value="<%=category.id %>">
                             <button onClick="confirmDeleteModal('<%=category.id %>')" class="btn btn-danger">Del</button> 
                         </form>
-                    </th>
+                    </td>
                 </tr>
             <% }) %>
+
+            <% if (categories.count == 0) { %>
+                <tr>
+                    <td colspan="4" class="text-center">No data</td>
+                </tr>
+            <% } %>
         </tbody>
     </table>
 

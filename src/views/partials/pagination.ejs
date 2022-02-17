@@ -2,7 +2,7 @@
 <nav aria-label="Page navigation example">  
     <ul class="pagination justify-content-center">
           
-        <li class="page-item <% if (page == 1) { %>disabled<% } %>"><a class="page-link" href="<%=url%>?page=<%=page-1%>">Previous</a></li>    
+        <li class="page-item <% if (page == 1) { %>disabled<% } %>"><a class="page-link" href="<%=url%>?page=<%=page-1%>">‹</a></li>    
         <% if (page > 1 ) { %>
             <li class="page-item"><a class="page-link" href="<%=url%>?page=<%=page-1%>"><%=page-1%></a></li>
         <% }%>
@@ -10,7 +10,7 @@
         <% if (next) { %>
             <li class="page-item"><a class="page-link" href="<%=url%>?page=<%=page+1%>"><%=page+1%></a></li>
         <% } %>
-        <li class="page-item  <% if (!next) { %>disabled<% } %>"><a class="page-link" href="<%=url%>?page=<%=page+1%>">Next</a></li>
+        <li class="page-item  <% if (!next) { %>disabled<% } %>"><a class="page-link" href="<%=url%>?page=<%=page+1%>">›</a></li>
        
     </ul>
 </nav>
