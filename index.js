@@ -13,7 +13,7 @@ const Category = require("./src/models/category.models")
 
 // Set view engine to ejs and sent directory's views
 app.set('view engine', 'ejs')
-app.set('views','./src/views');
+app.set('views', __dirname + '/src/views');
 
 // Static Files
 app.use(express.static("public"))
