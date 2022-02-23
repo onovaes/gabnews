@@ -1,0 +1,21 @@
+{
+  "development": {
+    "storage": "../.sqlite/gabnews.db",
+    "seederStorage": "sequelize",
+    "dialect": "sqlite"
+  },
+  "test": {
+    "username": "root",
+    "password": "121212",
+    "database": "gabnews",
+    "host": "localhost",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
