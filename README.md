@@ -1,6 +1,6 @@
 # GabNews
 
-Simple News Publishing System made with node.js and express framework.
+Simple News Publishing System made with node.js and express framework to study purpose
 
 #### 🚧  Under development...  🚧
 
